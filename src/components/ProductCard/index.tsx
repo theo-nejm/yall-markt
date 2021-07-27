@@ -6,7 +6,7 @@ export function ProductCard(): JSX.Element {
     <Container>
       <h3>Product title</h3>
       <p>Product description</p>
-      <p>Product image</p>
+      <img alt="Soccer ball" />
     </Container>
   );
 }

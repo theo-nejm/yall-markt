@@ -7,6 +7,7 @@ import { IoMdMusicalNote } from 'react-icons/io';
 type CategoryItemPropsType = {
   imgIndex: 0 | 1 | 2;
   categoryName: string;
+  onClick: () => void;
 };
 
 export function CategoryItem(props: CategoryItemPropsType): JSX.Element {
@@ -17,7 +18,7 @@ export function CategoryItem(props: CategoryItemPropsType): JSX.Element {
   ];
 
   return (
-    <Container>
+    <Container onClick={props.onClick}>
       {imgOptions[props.imgIndex]}
       <span>{props.categoryName}</span>
     </Container>
